@@ -1,12 +1,16 @@
 import React from 'react';
-import { FiSearch, FiImage } from 'react-icons/fi'
-import { BsThreeDots } from 'react-icons/bs'
-import { AiOutlineGif, AiOutlineSmile, AiOutlineCalendar } from 'react-icons/ai'
-import { GoGraph } from 'react-icons/go'
+import { Link } from 'react-router-dom'
+import { FiSearch, FiImage, FiShare } from 'react-icons/fi';
+import { BsThreeDots } from 'react-icons/bs';
+import { AiOutlineGif, AiOutlineSmile, AiOutlineCalendar, AiOutlineRetweet, AiOutlineHeart } from 'react-icons/ai';
+import { GoGraph } from 'react-icons/go';
+import { IoChatbubbleOutline } from 'react-icons/io5'
 
-import logoImg from '../../assets/logo.png'
-import profileImg from '../../assets/profile-img.jpg'
-import './styles.css'
+import logoImg from '../../assets/logo.png';
+import profileImg from '../../assets/profile-img.jpg';
+import tweetProfileImg from '../../assets/tweet-profile-img.jpg';
+import tweetImg from '../../assets/tweet-img.jpg'
+import './styles.css';
 
 export default function Home() {
     return(
@@ -49,8 +53,8 @@ export default function Home() {
                             <button>Tweetar</button>
                         </div>
 
-                        <div className="profile">
-                            <img src={profileImg} alt="profile image"/>
+                        <div className="profile-section">
+                            <img className="profile" src={profileImg} alt="profile"/>
                             <div className="profile-information">
                                 <span>Jair M. Bolsonaro</span>
                                 <strong>@jairbolsonaro</strong>
@@ -68,7 +72,7 @@ export default function Home() {
                     </button>
                     <div className="new-tweet">
                         <div className="input-section">
-                            <img src={profileImg} alt=""/>
+                            <img className="profile" src={profileImg} alt="profile"/>
                             <input type="text" placeholder="O que está acontecendo? "/>
                         </div>
                         <div className="new-tweet-buttons">
@@ -95,6 +99,53 @@ export default function Home() {
                         </div>
                     </div>
 
+                    <div className="tweet-container" id="tweet1" >
+                        <div className="tweet">
+                            <div className="profile-content">
+                                <img className="profile" src={tweetProfileImg} alt="cleitin profile"/>
+                                <Link to="/profile?id=1">Caçador de Megalodon</Link>
+                                <span>@cleitin_shitkk</span>
+                                <span>. 3 h</span>
+                            </div>
+
+                            <div className="tweet-content">
+                                <p>😎</p>
+                                <img src={tweetImg} alt="Tweet"/>
+                            </div>
+
+                            <div className="tweet-action-buttons">
+                                <IoChatbubbleOutline />
+                                <AiOutlineRetweet />
+                                <AiOutlineHeart />
+                                <FiShare />
+                                <GoGraph />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="tweet-container" id="tweet2" >
+                        <div className="tweet">
+                            <div className="profile-content">
+                                <img className="profile" src={tweetProfileImg} alt="cleitin profile"/>
+                                <Link to="/profile?id=1">Caçador de Megalodon</Link>
+                                <span>@cleitin_shitkk</span>
+                                <span>. 3 h</span>
+                            </div>
+
+                            <div className="tweet-content">
+                                <p>😎</p>
+                                <img src={tweetImg} alt="Tweet"/>
+                            </div>
+
+                            <div className="tweet-action-buttons">
+                                <IoChatbubbleOutline />
+                                <AiOutlineRetweet />
+                                <AiOutlineHeart />
+                                <FiShare />
+                                <GoGraph />
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section className="right">
                     <div className="search">

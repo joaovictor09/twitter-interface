@@ -8,3 +8,12 @@
 button {
     cursor: pointer;
 }
+
+a{
+    text-decoration: none;
+}
+
+img.profile{
+    border-radius: 100%;
+    width: 50px;
+}
