@@ -1,6 +1,8 @@
 import React from 'react';
-import { FiSearch } from 'react-icons/fi'
+import { FiSearch, FiImage } from 'react-icons/fi'
 import { BsThreeDots } from 'react-icons/bs'
+import { AiOutlineGif, AiOutlineSmile, AiOutlineCalendar } from 'react-icons/ai'
+import { GoGraph } from 'react-icons/go'
 
 import logoImg from '../../assets/logo.png'
 import profileImg from '../../assets/profile-img.jpg'
@@ -61,9 +63,38 @@ export default function Home() {
                     
                 </section>
                 <section className="mid">
-                    <button>
+                    <button className="inicial-page">
                         <strong>Página Inicial</strong>
                     </button>
+                    <div className="new-tweet">
+                        <div className="input-section">
+                            <img src={profileImg} alt=""/>
+                            <input type="text" placeholder="O que está acontecendo? "/>
+                        </div>
+                        <div className="new-tweet-buttons">
+                            <div className="tweet-content">
+                            <button>
+                                <FiImage/>
+                            </button>
+                            <button>
+                                <AiOutlineGif/>
+                            </button>
+                            <button>
+                                <GoGraph/>
+                            </button>
+                            <button>
+                                <AiOutlineSmile/>
+                            </button>
+                            <button>
+                                <AiOutlineCalendar/>
+                            </button>
+                            </div>
+                            <div className="tweet-button">
+                                <button>Tweetar</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <section className="right">
                     <div className="search">

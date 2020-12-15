@@ -1,19 +1,20 @@
 .container {
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background-color: rgb(21, 32, 43);
 }
 
 
 .container section.left {
-    width: 325px;
+    width: 25%;
     height: 100vh;
     margin-left: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(21, 32, 43);
+
 
 }
 
@@ -81,7 +82,7 @@
     width: 250px;
     height: 30px;
 
-    background-color: rgba(29,161,242,1.00);;
+    background-color: rgba(29,161,242,1.00);
     color: #fff;
 
     display: flex;
@@ -129,4 +130,94 @@
 .container section.left .profile img {
     border-radius: 100%;
     width: 50px;
+}
+
+
+
+/* Mid Side */
+
+.container section.mid {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    width: 50%;
+}
+
+.container section.mid button.inicial-page{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.container section.mid .new-tweet img {
+    width: 50px;
+    margin-left: 15px;
+    border-radius: 100%;
+}
+
+.container section.mid .new-tweet{
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+.container section.mid .new-tweet .input-section{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container section.mid .new-tweet .input-section input{
+    border: none;
+    width: 100%;
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.container section.mid .new-tweet .new-tweet-buttons{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+.container section.mid .new-tweet .new-tweet-buttons button{
+    margin-top: 10px;
+    padding: 7px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+
+.container section.mid .new-tweet .new-tweet-buttons button:hover{
+    background-color: rgba(29, 161, 242, 0.2);
+}
+
+.container section.mid .new-tweet .new-tweet-buttons svg{
+    height: 25px;
+    width: 25px;
+    color:   rgba(29,161,242,1.00);
+}
+
+.container section.mid .new-tweet .new-tweet-buttons .tweet-button button {
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: rgba(29, 161, 242, 1);
 }
