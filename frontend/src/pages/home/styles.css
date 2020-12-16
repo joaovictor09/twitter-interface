@@ -8,7 +8,7 @@
 
 
 .container section.left {
-    width: 25%;
+    width: 22%;
     height: 100vh;
     margin-left: 10;
     display: flex;
@@ -284,3 +284,88 @@
     height: 20px;
     color: gray;
 }
+
+/*RIGHT SIDE*/
+
+.container section.right {
+    width: 28%;
+    padding: 10px 25px
+}
+
+.container section.right .search {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(37, 51, 65);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container section.right .search svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(136, 153, 166);
+    margin: 0 10px
+}
+
+.container section.right .search input {
+    border: none;
+    font-size: 15px;
+    height: 25px;
+    font-weight: normal;
+    background-color: transparent;
+    color: #fff;
+}
+
+.container section.right .search:focus-within{
+    border: 1px solid rgba(29, 161, 242, 1);
+}
+
+.container section.right .trending {
+    background-color: rgba(53, 61, 70, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.container section.right .trending .title p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.container section.right .trending .trending-content {
+    margin-top: 5px;
+    border-top: 1px solid gray
+}
+
+.container section.right .trending .trending-content .type{
+    margin: 10px 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+}
+
+.container section.right .trending .trending-content p {
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container section.right .trending .trending-content .moments span{
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+}
+
+.container section.right .trending .trending-content .moments a{
+    font-weight: 400;
+    font-size: 12px;
+    color:  rgba(29, 161, 242, 1);
+}
+

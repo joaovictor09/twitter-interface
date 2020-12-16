@@ -152,6 +152,59 @@ export default function Home() {
                         <FiSearch />
                         <input type="text" placeholder="Buscar no twitter"/>
                     </div>
+
+                    <div className="trending">
+                        <div className="title">
+                            <p>O que está acontecendo</p>
+                        </div>
+                        <div className="trending-content" id="1">
+                            <div className="type">
+                                <span>Premier League</span>
+                                <span> . há 1 hora</span>
+                            </div>
+                            <p>Wolves vc Chelsea</p>
+                            <div className="moments">
+                                <span>Assuntos do Momento: </span>
+                                <Link to="/">Zouma</Link>    
+                            </div>
+                        </div>
+
+                        <div className="trending-content" id="1">
+                            <div className="type">
+                                <span>Premier League</span>
+                                <span> . há 1 hora</span>
+                            </div>
+                            <p>Wolves vc Chelsea</p>
+                            <div className="moments">
+                                <span>Assuntos do Momento: </span>
+                                <Link to="/">Zouma</Link>    
+                            </div>
+                        </div>
+                        
+                        <div className="trending-content" id="1">
+                            <div className="type">
+                                <span>Premier League</span>
+                                <span> . há 1 hora</span>
+                            </div>
+                            <p>Wolves vc Chelsea</p>
+                            <div className="moments">
+                                <span>Assuntos do Momento: </span>
+                                <Link to="/">Zouma</Link>    
+                            </div>
+                        </div>
+
+                        <div className="trending-content" id="1">
+                            <div className="type">
+                                <span>Premier League</span>
+                                <span> . há 1 hora</span>
+                            </div>
+                            <p>Wolves vc Chelsea</p>
+                            <div className="moments">
+                                <span>Assuntos do Momento: </span>
+                                <Link to="/">Zouma</Link>    
+                            </div>
+                        </div>
+                    </div>
                 </section>
         </div>
     )
